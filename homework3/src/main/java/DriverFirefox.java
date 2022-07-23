@@ -13,7 +13,6 @@ public  class DriverFirefox extends DriverSetup{
         String absolutePath = resourceDirectory.toFile().getAbsolutePath();
         System.setProperty("webdriver.gecko.driver", absolutePath + "/binary/geckodriver.exe");
 
-
     }
 
     @Override
@@ -21,7 +20,7 @@ public  class DriverFirefox extends DriverSetup{
 
         //this line created the geckodriver
         try{
-            this.driver = new FirefoxDriver();
+          this.driver = new FirefoxDriver();
 
         }catch (SessionNotCreatedException e){
             System.out.println("\nWeb Driver Not Created " + e.getMessage());

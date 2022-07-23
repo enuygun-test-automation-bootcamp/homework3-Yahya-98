@@ -18,7 +18,6 @@ public class Main {
             // log in for all drivers
             loginPage.openLoginPage(drivers[i].driver);
 
-
         }
     }
 }
